@@ -1,0 +1,49 @@
+/* Main variables */
+
+$desktopContainer: 1170px;
+$tabletIndent: 45px;
+
+
+/* Common styles */
+
+* {
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    font-display: swap;
+    src: 
+        url("../fonts/OpenSans-Regular.woff2") format("woff2"),
+        url("../fonts/OpenSans-Regular.woff") format("woff"),
+        url("../fonts/OpenSans-SemiBold.woff2") format("woff2"),
+        url("../fonts/OpenSans-SemiBold.woff") format("woff"),
+        url("../fonts/OpenSans-Bold.woff2") format("woff2"),
+        url("../fonts/OpenSans-Bold.woff") format("woff");
+}
+
+body, ul, h1, h2, h3, p {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    min-width: $desktopContainer + $tabletIndent * 2;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+}
+
+
+/* Container */
+
+.container {
+    padding-left: $tabletIndent;
+    padding-right: $tabletIndent;
+}
+
+@media (min-width: $desktopContainer + $tabletIndent * 2) {
+    .container {
+        padding-left: calc(50% - #{$desktopContainer} / 2);
+        padding-right: calc(50% - #{$desktopContainer} / 2);
+    }
+}

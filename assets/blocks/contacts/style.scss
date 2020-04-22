@@ -1,0 +1,125 @@
+/* Contacts */
+
+.contacts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 150px;
+    padding-bottom: 120px;
+    color: #ffffff;
+    background: 
+        linear-gradient(rgba(33, 33, 33, 0.95), rgba(33, 33, 33, 0.95)),
+        url("../images/contacts-background.jpg");
+    background-size: cover;
+}
+
+.contacts .block-title {
+    margin-bottom: 20px;
+    font-size: 30px;
+}
+
+.contacts .block-subtitle {
+    width: 650px;
+    margin-bottom: 125px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.contacts-list {
+    display: flex;
+    margin-bottom: 50px;
+    list-style: none;
+}
+
+.contacts-list__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 230px;
+    margin-right: 150px;
+    text-align: center;
+
+    &:last-child {
+        margin-right: 0;
+    }
+
+    &:before {
+        content: "";
+        display: block;
+        width: 105px;
+        height: 105px;
+        margin-bottom: 35px;
+        background-color: #3949ab;
+        background-repeat: no-repeat;
+        background-position: center;
+        border-radius: 50%;
+    }
+
+    &--location:before {
+        background-image: url("../images/icon--location.png");
+    }
+
+    &--call:before {
+        background-image: url("../images/icon--call.png");
+    }
+
+    &--site:before {
+        background-image: url("../images/icon--mail.png");
+    }
+}
+
+.feedback-form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.top-fields-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+
+    input {
+        flex-grow: 1;
+        margin-right: 30px;
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+}
+
+.feedback-form input, 
+.feedback-form textarea {
+    padding: 35px 23px;
+    font-size: 20px;
+    font-weight: 600;
+    border-radius: 10px;
+    border: none;
+
+    &::placeholder {
+        font-family: "Open Sans", sans-serif;
+        color: #212121;
+    }
+}
+
+.feedback-form textarea {
+    height: 320px;
+    margin-bottom: 30px;
+}
+
+.feedback-form__btn {
+    align-self: flex-end;
+    padding: 25px 50px;
+    font-size: 20px;
+    font-weight: 600;
+    background-color: #ffffff;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+
+    &:hover {
+        color: #ffffff;
+        background-color: #3949ab;
+    }
+}

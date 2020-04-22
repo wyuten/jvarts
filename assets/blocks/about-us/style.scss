@@ -1,0 +1,72 @@
+/* About us */
+
+.about-us {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 150px;
+    padding-bottom: 120px;
+}
+
+.about-us .block-title {
+    margin-bottom: 20px;
+    font-size: 30px;
+}
+
+.about-us .block-subtitle {
+    text-align: center;
+    width: 620px;
+    margin-bottom: 125px;
+    font-size: 20px;
+}
+
+
+// Advantages
+
+.advantages {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    list-style: none;
+}
+
+.advantages__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &::before {
+        content: "";
+        display: block;
+        width: 80px;
+        height: 80px;
+        margin-bottom: 25px;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    &:nth-child(1):before {
+        background-image: url("../images/world.png");
+    }
+
+    &:nth-child(2):before {
+        background-image: url("../images/communication.png");
+    }
+
+    &:nth-child(3):before {
+        background-image: url("../images/head.png");
+    }
+}
+
+.advantages__item-title {
+    margin-bottom: 15px;
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.advantages__item-subtitle {
+    width: 280px;
+    font-size: 18px;
+    text-align: center;
+}

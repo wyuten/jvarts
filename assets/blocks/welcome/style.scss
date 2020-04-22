@@ -1,0 +1,70 @@
+/* Welcome */
+
+.welcome {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 60px;
+    padding-bottom: 30px;
+    min-height: 510px;
+
+    // Substract header height from screen height
+    height: calc(100vh - 124px);
+
+    color: #ffffff;
+    background: 
+        linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+        url('../images/work-table.jpg');
+    background-size: cover;
+    background-position: 0 -70px;
+}
+
+.welcome__text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.page-title {
+    font-size: 60px;
+    font-weight: normal;
+    margin-bottom: 15px;
+}
+
+.page-subtitle {
+    font-size: 22px;
+    margin-bottom: 125px;
+}
+
+.links {
+    margin-bottom: 120px;
+}
+
+.services-link,
+.contacts-link {
+    padding: 25px 30px 25px 30px;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.services-link {
+    margin-right: 25px;
+    border: 3px solid #ffffff;
+
+    &:hover {
+        border-color: #00897b;
+    }
+}
+
+.contacts-link {
+    background-color: #00897b;
+    border: 3px solid #00897b;
+    
+    &:hover {
+        color: #ffffff;
+        background-color: transparent;
+        border-color: #00897b;
+    }
+}

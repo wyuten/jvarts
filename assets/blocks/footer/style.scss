@@ -1,0 +1,21 @@
+/* Footer */
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer__text {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-right: 100px;
+}
+
+.footer__cms-link {
+    color: #000000;
+
+    &:hover {
+        text-decoration: none;
+    }
+}
